@@ -103,13 +103,7 @@ if (NOT HIPIFY_CLANG_TESTS_ONLY)
     clangToolingCore
     clangRewrite
     clangBasic
-    LLVMProfileData
-    LLVMSupport
-    LLVMMCParser
-    LLVMMC
-    LLVMBitReader
-    LLVMOption
-    LLVMCore)
+    LLVM)
 
   if(LLVM_PACKAGE_VERSION VERSION_GREATER "6.0.1")
     target_link_libraries(hipify-clang PRIVATE clangToolingInclusions)
